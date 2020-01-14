@@ -1,0 +1,42 @@
+# Site settings
+title:          Kyanne Rose
+description:    "Newbie programmer exploring her love for computers and fighting for an open, accessible Internet."
+baseurl:        ""
+url:            "https://kyanne.dev"
+
+# Google Analytics
+google_analytics: UA—XXXXXXXX-X
+
+# Author
+author:
+  name:         Kyanne Rose
+  url:          https://kyanne.dev
+  email:        hello@kyanne.email
+
+# Build settings
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  # - jemoji #Uncomment this to allow emoji in your post
+
+# Permalinks
+permalink:      /blog/:year-:month-:day/:title
+paginate_path:  /blog/page:num"
+paginate:       5
+
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+
+# Disqus (Set to your disqus id)
+disqus:         jekyll-tale

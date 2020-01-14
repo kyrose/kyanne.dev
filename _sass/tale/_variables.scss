@@ -1,0 +1,42 @@
+// Colors
+$default-color: #555;
+$default-shade: #353535;
+$default-tint: #aaa;
+$grey-1: #979797;
+$grey-2: #e5e5e5;
+$grey-3: #f9f9f9;
+$white: #fff;
+$blue: #4a9ae1;
+$shadow-color: rgba(0, 0, 0, .2);
+$code-color: #0060E0;
+$code-bkg-color: #D0FFED;
+
+// Fonts
+$sans-serif: 'Inter', 'Segoe UI', Helvetica, Arial, sans-serif;
+$serif-primary: $sans-serif;
+$serif-secondary: $sans-serif;
+$monospace: 'Lekton', 'Fira Code', Menlo, Monaco, monospace;
+$monospace-secondary: 'Fira Code', 'Lekton', Menlo, Monaco, monospace;
+
+@mixin box-sizing($type: border-box) {
+  -webkit-box-sizing: $type;
+     -moz-box-sizing: $type;
+          box-sizing: $type;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+          transition: $args;
+}
+
+@keyframes blinker {
+	0% { opacity: 1.0; }
+  50% { opacity: 1.0; }
+  53% { opacity: 0.0; }
+  100% { opacity: 0.0; }
+}
+
+.blink {
+  animation: blinker 2s linear infinite;
+}
